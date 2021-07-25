@@ -28,7 +28,7 @@ df.where(df['profitable'] == 1).count()
 df = df.replace([np.inf, -np.inf], np.nan).dropna(axis=0,how='any')
 df.shape
 
-#split genres, separate distinct valyes, list all genres as new boolean columns 
+#split genres, separate distinct values, list all genres as new boolean columns 
 
 genres_list = df.genres.apply(lambda x: x.split(","))
 genres = []
